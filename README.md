@@ -15,6 +15,7 @@ I may eventually push it all here, but in the meantime, here are a few of the th
 * revert the build to standard [electron-webpack](https://github.com/electron-userland/electron-webpack)
 * change the internal data model (eventually with server side support)
 * support multiple projects
+* start using [RxJS](https://www.learnrxjs.io/)
 * remove [CodeMirror](https://codemirror.net/) and replace it with [monaco](https://microsoft.github.io/monaco-editor/)
 * change the internal markdown processing workflow
 * improve the [monarch](https://microsoft.github.io/monaco-editor/monarch.html) markdown styling
