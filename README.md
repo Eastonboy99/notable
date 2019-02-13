@@ -1,15 +1,25 @@
 # Notable 
 
 <p align="center">
-  <img src="resources/demo/main.png" alt="Notable" width="750">
+  <img src="resources/demo/fork.png" alt="Notable" width="750">
 </p>
 
 ## Why a fork
 
 Three years ago I started looking at markdown editors to help with some of my professional project-based workflows. At the time, I was dealing with multiple projects at the same time, many of them having weekly checkpoints involving minutes to be gathered, reviewed and shared. I started taking these notes in individual markdown documents, asking that others in the teams do the same. As the projects went along, managing the documentation became an increasingly burdensome task, and my then-single page editor quickly did not suffice. So I started building a small tool to assist. I am back into a multi-projects environment, and again facing the issue of tracking all this information. Time for a new tool.
 
-I ran into Notable, which had the merrit of being both [Open Source (MIT)](https://github.com/lmihalkovic/notable/blob/v1.3.0/LICENSE)  and with a clean, albeit not suited for my purpose, codebase. This repo is a fork started from v1.3.0 of the great work started by [Fabio Spampinato](https://github.com/fabiospampinato). 
+I ran into Notable, which had the merrit of being both [Open Source (MIT)](https://github.com/lmihalkovic/notable/blob/v1.3.0/LICENSE)  and with a clean, albeit not suited for my purpose, codebase. This repo is a fork started from v1.3.0 of the great work started by [Fabio Spampinato](https://github.com/fabiospampinato).
 
+I may eventually push it all here, but in the meantime, here are a few of the things I am doing
+
+* revert the build to standard [electron-webpack](https://github.com/electron-userland/electron-webpack)
+* change the internal data model (eventually with server side support)
+* support multiple projects
+* remove [codebuilder](https://codemirror.net/) and replace it with [monaco](https://microsoft.github.io/monaco-editor/)
+* change the internal markdown processing workflow
+* improve the [monarch](https://microsoft.github.io/monaco-editor/monarch.html) markdown styling
+* support new tags (```@todo```, ```@due(date)```, ```@done```)
+* add code completion
 
 ## Fabio's Intro to Notable
 
