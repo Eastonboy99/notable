@@ -1,8 +1,17 @@
-# Notable ([DOWNLOAD](https://github.com/fabiospampinato/notable/releases))
+# Notable 
 
 <p align="center">
   <img src="resources/demo/main.png" alt="Notable" width="750">
 </p>
+
+## Why a fork
+
+Three years ago I started looking at markdown editors to help with some of my professional project-based workflows. At the time, I was dealing with multiple projects at the same time, many of them having weekly checkpoints involving minutes to be gathered, reviewed and shared. I started taking these notes in individual markdown documents, asking that others in the teams do the same. As the projects went along, managing the documentation became an increasingly burdensome task, and my then-single page editor quickly did not suffice. So I started building a small tool to assist. I am back into a multi-projects environment, and again facing the issue of tracking all this information. Time for a new tool.
+
+I ran into Notable, which had the merrit of being both [Open Source (MIT)](https://github.com/lmihalkovic/notable/blob/v1.3.0/LICENSE)  and with a clean, albeit not suited for my purpose, codebase. This repo is a fork started from v1.3.0 of the great work started by [Fabio Spampinato](https://github.com/fabiospampinato). 
+
+
+## Fabio's Intro to Notable
 
 The markdown-based note-taking app that doesn't suck.
 
