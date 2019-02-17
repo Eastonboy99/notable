@@ -1,4 +1,4 @@
-# Notable 
+# A Fork of Notable 
 
 <p align="center">
   <img src="resources/demo/fork.png" alt="Notable" width="750">
@@ -10,30 +10,28 @@ Three years ago I started looking at markdown editors to help with some of my pr
 
 I ran into Notable, which had the merrit of being both [Open Source (MIT)](https://github.com/lmihalkovic/notable/blob/v1.3.0/LICENSE)  and with a clean, albeit not suited for my purpose, codebase. This repo is a fork started from v1.3.0 of the great work started by [Fabio Spampinato](https://github.com/fabiospampinato).
 
-I may eventually push it all here, but in the meantime, here are a few of the things I am doing
+I may eventually push it all here, but in the meantime, here are a few of the technical things I am doing under the hood:
 
-* revert the build to standard [electron-webpack](https://github.com/electron-userland/electron-webpack)
+* revert the build to the standard [electron-webpack](https://github.com/electron-userland/electron-webpack)
 * change the internal data model (eventually with server side support)
-* support multiple projects
-* start using [RxJS](https://www.learnrxjs.io/)
+* add [RxJS](https://www.learnrxjs.io/) to the dependencies
 * remove [CodeMirror](https://codemirror.net/) and replace it with [monaco](https://microsoft.github.io/monaco-editor/)
 * change the internal markdown processing workflow
 * improve the [monarch](https://microsoft.github.io/monaco-editor/monarch.html) markdown styling
-* support new tags (```@todo```, ```@due(date)```, ```@done```)
-* add code completion
-
-## Fabio's Intro to Notable
-
-The markdown-based note-taking app that doesn't suck.
-
-I couldn't find a note-taking app that ticked all the boxes I'm interested in: notes are written and rendered in GitHub-flavored Markdown, no WYSIWYG, no proprietary formats, I can run a search & replace across all notes, notes support attachments, the app isn't bloated, the app has a pretty interface, tags are indefinitely nestable and can import Evernote notes (because that's what I was using before).
-
-So I built my own.
+* make all the layout code uniform (svelto gets in the way)
 
 ## Features
 
+The original Notable was interesting but it is unfortunately too limited in areas where I have specific needs. So these are things which I am working on
+
+* support working on multiple workbooks/projects
+* support notebooks-as-tags & notebook-as-folder inside the same workbook/project
+* support new tags (```@todo```, ```@due(date)```, ```@done```)
+* add code completion where it makes sense
+* show all the relevant dates for a given workbook/project
+
 ```
-/path/to/your/data_directory
+/.../path/to/workbook1
 ├─┬ attachments
 │ ├── foo.ext
 │ ├── bar.ext
@@ -41,6 +39,18 @@ So I built my own.
 └─┬ notes
   ├── foo.md
   ├── bar.md
+  └── …
+/.../path/to/workbook2
+├─┬ attachments
+│ ├── foo.ext
+│ ├── bar.ext
+│ └── …
+└─┬ notes
+  ├─┬ notebook1
+  │ └─┬ 01 Specs
+  │   ├ foo1.md
+  │   └── …
+  ├── bar2.md
   └── …
 ```
 
@@ -52,6 +62,14 @@ So I built my own.
 
 Upon first instantiation, some tutorial notes will be added to the app, check them out for more in-depth details about the app and how to use it. You can also find the raw version [here](https://github.com/fabiospampinato/notable/tree/master/resources/tutorial/notes).
 
+## Fabio's Intro to [Notable](https://github.com/fabiospampinato/notable)
+
+The markdown-based note-taking app that doesn't suck.
+
+I couldn't find a note-taking app that ticked all the boxes I'm interested in: notes are written and rendered in GitHub-flavored Markdown, no WYSIWYG, no proprietary formats, I can run a search & replace across all notes, notes support attachments, the app isn't bloated, the app has a pretty interface, tags are indefinitely nestable and can import Evernote notes (because that's what I was using before).
+
+So I built my own.
+
 ## [Comparison](resources/comparison/table.png?raw=true)
 
 [![Click to Enlarge](resources/comparison/table.png)](resources/comparison/table.png?raw=true)
@@ -59,6 +77,10 @@ Upon first instantiation, some tutorial notes will be added to the app, check th
 Part of this comparison is personal opinion: you may disagree on the UI front, things I consider bloat may be considered features by somebody else etc. but hopefully this comparison did a good job at illustrating the main differences.
 
 ## Demo
+
+### New (partially broken) Layout
+
+<img src="resources/demo/newlayout.png" alt="New Layout" width="750">
 
 ### Indefinitely Nestable Tags
 
@@ -74,15 +96,8 @@ Part of this comparison is personal opinion: you may disagree on the UI front, t
 
 ## Contributing
 
-There are multiple ways to contribute to this project, read about them [here](https://github.com/fabiospampinato/notable/blob/master/.github/CONTRIBUTING.md).
-
-## Related
-
-- **[enex-dump](https://github.com/fabiospampinato/enex-dump)**: Dump the content of Evernote's `.enex` files, preserving attachments, some metadata and optionally converting notes to Markdown.
-- **[Noty](https://github.com/fabiospampinato/noty)**: Autosaving sticky note with support for multiple notes without needing multiple windows.
-- **[Markdown Todo](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-markdown-todo)**: Manage todo lists inside markdown files with ease. Have the same todo-related shortcuts that Notable provides, but in Visual Studio Code.
-- **[Todo+](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus)**: Manage todo lists with ease. Powerful, easy to use and customizable.
+At the moment this is a closed source work-in-progressm but I am very curious to hear everything you can think about this app, and all the ways in which it would **NOT** work for you.
 
 ## License
 
-MIT © Fabio Spampinato
+MIT © L. Mihalkovic, Portions Fabio Spampinato 
