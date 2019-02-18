@@ -81,7 +81,7 @@ Part of this comparison is personal opinion: you may disagree on the UI front, t
 ### Follow Important Deliverables
 
 <p align="center">
-  <img src="resources/demo/calendar.png" alt="Notable" width="750">
+  <img src="resources/demo/calendar.png" alt="Notable" width="280">
 </p>
 
 ### Monaco Editor
