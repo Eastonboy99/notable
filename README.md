@@ -1,7 +1,7 @@
-# A Fork of Notable 
+# **Notem**, once a fork of Notable
 
 <p align="center">
-  <img src="resources/demo/fork.png" alt="Notable" width="750">
+  <img src="resources/demo/newlayout2.png" alt="NoteWorthy" width="750">
 </p>
 
 ## Why a fork
@@ -78,9 +78,11 @@ Part of this comparison is personal opinion: you may disagree on the UI front, t
 
 ## Demo
 
-### New (partially broken) Layout
+### Monaco Editor
 
-<img src="resources/demo/newlayout.png" alt="New Layout" width="750">
+<p align="center">
+  <img src="resources/demo/fork.png" alt="Notable" width="750">
+</p>
 
 ### Indefinitely Nestable Tags
 
