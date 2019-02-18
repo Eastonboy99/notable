@@ -1,7 +1,7 @@
 # **Notem**, once a fork of Notable
 
 <p align="center">
-  <img src="resources/demo/newlayout2.png" alt="NoteWorthy" width="750">
+  <img src="resources/demo/newlayout3.png" alt="NoteWorthy" width="750">
 </p>
 
 ## Why a fork
@@ -77,6 +77,12 @@ So I built my own.
 Part of this comparison is personal opinion: you may disagree on the UI front, things I consider bloat may be considered features by somebody else etc. but hopefully this comparison did a good job at illustrating the main differences.
 
 ## Demo
+
+### Follow Important Deliverables
+
+<p align="center">
+  <img src="resources/demo/calendar.png" alt="Notable" width="750">
+</p>
 
 ### Monaco Editor
 
