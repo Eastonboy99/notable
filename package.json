@@ -132,6 +132,7 @@
     "asciimath2tex": "^1.1.0",
     "calls-batch": "^1.1.1",
     "chokidar": "^2.0.4",
+    "node-sass": "^4",
     "codemirror": "git://github.com/codemirror/CodeMirror.git",
     "codemirror-github-light": "^0.4.2",
     "crc-32": "^1.2.0",
