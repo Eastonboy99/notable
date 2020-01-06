@@ -47,3 +47,21 @@ rm -rf node_modules/electron
 npm install
 npm run dev
 ```
+
+
+to build a redist appimage, after all that, I'm using:
+
+```bash
+yarn compile
+yarn electron-builder
+```
+
+so all together:
+
+```bash
+git clone https://github.com/RyanGreenup/notable
+cd notable
+.github/AABuildScript.sh
+yarn compile
+yarn electron-builder
+```
