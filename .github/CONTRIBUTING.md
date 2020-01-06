@@ -35,11 +35,15 @@ Pull requests are especially welcome for issues labeled as [`bug`](https://githu
 Follow these steps in order to get Notable ready for development:
 
 ```bash
-git clone https://github.com/fabiospampinato/notable.git
+git clone https://github.com/RyanGreenup/notable
 cd notable
+yarn
+npm install node-sass
 npm install
 npm run svelto:dev
 npm run iconfont
 npm run tutorial
+rm -rf node_modules/electron
+npm install
 npm run dev
 ```
